@@ -1,0 +1,30 @@
+.signup-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff4b5c, #ff717a);
+}
+
+.form-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 0 5px 5px 0;
+}
+
+.input-group-text {
+  border-radius: 5px 0 0 5px;
+  background: #ff4b5c;
+  color: white;
+}
+
+.btn-primary {
+  background: #ff4b5c;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #ff1e2b;
+}

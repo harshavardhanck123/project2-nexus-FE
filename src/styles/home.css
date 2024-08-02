@@ -1,0 +1,129 @@
+/* Header and Navbar */
+.header {
+  background: url('/path/to/your/image.jpg') no-repeat center center/cover;
+  color: plum;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links .nav-item .nav-link {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.1rem;
+}
+
+.logout-button {
+  background: #ff4b5c;
+  color: white;
+  border: none;
+  margin-left: 490px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #ff1e2b;
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background: #ff4b5c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.hero .btn:hover {
+  background: #ff1e2b;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.menu-section {
+  background: #f8f9fa;
+}
+
+.about-section, .contact-section {
+  background: #fff;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Menu Grid */
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  background: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
