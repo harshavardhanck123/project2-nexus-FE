@@ -1,58 +1,19 @@
-/* Header and Navbar */
-.header {
-  background: url('/path/to/your/image.jpg') no-repeat center center/cover;
-  color: plum;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-}
-
-.navbar {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.navbar-brand {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.nav-links .nav-item .nav-link {
-  color: white;
-  margin: 0 10px;
-  font-size: 1.1rem;
-}
-
-.logout-button {
-  background: #ff4b5c;
-  color: white;
-  border: none;
-  margin-left: 490px;
-  padding: 5px 10px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.logout-button:hover {
-  background: #ff1e2b;
-}
-
-/* Hero Section */
+/* home.css */
 .hero {
-  padding: 100px 20px;
+  background: url('path_to_your_image.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-content {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .hero p {
@@ -60,70 +21,56 @@
   margin-bottom: 30px;
 }
 
-.hero .btn {
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  background: #ff4b5c;
-  color: white;
-  border: none;
-  border-radius: 3px;
-}
-
-.hero .btn:hover {
-  background: #ff1e2b;
-}
-
-/* Sections */
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.menu-section {
-  background: #f8f9fa;
-}
-
-.about-section, .contact-section {
-  background: #fff;
-}
-
-h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-}
-
-/* Menu Grid */
-.menu-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .menu-item {
-  background: white;
+  background: #fff;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 15px;
-  padding: 20px;
-  width: 200px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .menu-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
+.about-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.contact-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
 .footer {
-  background: #343a40;
-  color: white;
+  background-color: #333;
+  color: #fff;
   padding: 20px 0;
-  text-align: center;
+}
+
+.navbar-brand.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.1rem;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar-nav.ml-auto {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
