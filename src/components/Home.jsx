@@ -50,42 +50,42 @@ const Home = () => {
   return (
     <div className="home-container">
       <header className="header">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a className="navbar-brand logo" href="#">Masala Delight</a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNav">
-    <ul className="navbar-nav mr-auto">
-      <li className="nav-item">
-        <a className="nav-link" href="#home"><FontAwesomeIcon icon={faHome} /> Home</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#menu"><FontAwesomeIcon icon={faUtensils} /> Menu</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#about"><FontAwesomeIcon icon={faInfoCircle} /> About Us</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#contact"><FontAwesomeIcon icon={faPhone} /> Contact</a>
-      </li>
-      <li className="nav-item ml-auto d-flex align-items-center">
-        {data && !loading ? (
-          <span className="navbar-text mr-3 corner">Hello, {data.name}</span>
-        ) : (
-          <span className="navbar-text mr-3 corner">Loading...</span>
-        )}
-      </li>
-      <li className="nav-item">
-        <button className="btn btn-danger logout-button" onClick={handleLogout}>
-          <FontAwesomeIcon icon={faSignOutAlt} /> Logout
-        </button>
-      </li>
-    </ul>
-  </div>
-</nav>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a className="navbar-brand logo" href="#">Masala Delight</a>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item">
+                <a className="nav-link" href="#home"><FontAwesomeIcon icon={faHome} /> Home</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#menu"><FontAwesomeIcon icon={faUtensils} /> Menu</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#about"><FontAwesomeIcon icon={faInfoCircle} /> About Us</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#contact"><FontAwesomeIcon icon={faPhone} /> Contact</a>
+              </li>
+              <li className="nav-item ml-auto d-flex align-items-center">
+                {data && !loading ? (
+                  <span className="navbar-text mr-3 corner">Hello, {data.name}</span>
+                ) : (
+                  <span className="navbar-text mr-3 corner">Loading...</span>
+                )}
+              </li>
+              <li className="nav-item">
+                <button className="btn btn-danger logout-button" onClick={handleLogout}>
+                  <FontAwesomeIcon icon={faSignOutAlt} /> Logout
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-        
+
         <div className="hero text-center d-flex align-items-center justify-content-center">
           <div className="hero-content">
             <h2>Welcome to Masala Delight</h2>

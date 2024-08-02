@@ -16,7 +16,7 @@ const Login = () => {
     try {
       const response = await axios.post('http://127.0.0.1:3000/users/login', { email, password });
       if (response.data.message === 'Login Successfull') {
-        navigate(`/home/${response.data.user.id}`); 
+        navigate(`/home/${response.data.user.id}`);
       } else {
         setError('Invalid login credentials');
       }
